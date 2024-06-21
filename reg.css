@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&family=Titillium+Web:wght@400;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Titillium Web', sans-serif;   
+}
+
+@media screen and (min-width: 968px) {
+    :root {
+      --biggest-font-size: 2.5rem;
+      --h1-font-size: 2.25rem;
+      --h2-font-size: 1.5rem;
+      --h3-font-size: 1.25rem;
+      --normal-font-size: 1rem;
+      --small-font-size: .875rem;
+      --smaller-font-size: .813rem;
+    }
+}
+
+
+.container {
+    max-width: 1024px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+button{
+    background: none;
+    outline: none;
+    border: none;
+}
+
+.section {
+    padding: 6.5rem 0 1rem;
+}
+
+.section__title{
+    text-align: center;
+    font-weight: 600;
+}
+
+.para__title{
+    display: flex;
+    justify-content: center;
+    column-gap: .5rem;
+    color: #fff;
+}
+
+.para__title a{
+    color: #ffffff;
+}
+
+.header{
+    width: 100%;
+    height: var(--header-height);
+    background-color: hsl(0, 0%, 100%);
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: .4s;
+    z-index: var(--z-fixed);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, .1);
+}
+
+.sign__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+@media screen and (max-width: 767px){
+    .sign__form{
+        background-image: linear-gradient(43deg, #98bfff 0%, #769fe1 46%, #006294 100%);
+        padding: 2rem 3rem;
+        border-radius: 2rem 1rem;
+    }
+}
+
+.nav__logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: .4rem;
+    height: 4.5rem;
+}
+
+.nav__title,
+.nav__logo i{
+    font-size: 1.5rem;
+}
+
+.sign__title{
+    color: #ffffff;
+    font-size: 1.8rem;
+}
+
+form{
+    margin-top: 2rem;
+}
+
+div > input{
+    background: none;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgb(240, 240, 240);
+    width: 100%;
+    padding: .6rem 0;
+}
+
+div > label{
+    font-size: 1rem;
+    color: #ffffff;
+}
+
+form > div{
+    margin: 1.1rem 0;
+}
+
+div > input::placeholder{
+    color: #fff;
+}
+
+div > input[type=text],
+div > input[type=password]{
+    color: #fff;
+}
+
+.sign__btn{
+    background-color: #fff;
+    padding: .4rem 1.6rem;
+    border-radius: 1rem;
+    font-size: 1.4rem;
+    color: #0b52c5;
+    cursor: pointer;
+}
+
+.sign__btn:hover{
+    box-shadow:  0 2px 4px 4px rgba(255, 255, 255, 0.1);
+}
+
+.check{
+    display: flex;
+    align-items: center;
+    column-gap: .4rem;
+    margin: 1rem 0;
+}
+
+.check input{
+    height: 20px;
+    width: 20px;
+}
+
+.check div{
+    font-size: 1.1rem;
+    color: #fff;
+}
+
+@media screen and(min-width: 576px) {
+    .container{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (min-width: 767px) {
+    .container{
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    .sign__form{
+        padding: 2rem 3rem;
+        width: 100%;
+        background-image: linear-gradient(43deg, #98bfff 0%, #769fe1 46%, #006294 100%);
+        border-radius: 2rem 1rem;
+    }
+
+}
+@media screen and (min-width: 992px) {
+    .container{
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    .sign__form{
+        padding: 2rem 3rem;
+        width: 100%;
+        background-image: linear-gradient(43deg, #98bfff 0%, #769fe1 46%, #006294 100%);
+        border-radius: 2rem 1rem;
+    }
+    form{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3rem;
+    }
+}
+
+@media screen and (min-width: 1040px){
+    .container{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (min-width: 1700px){
+    .sign{
+        max-width: 1400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
